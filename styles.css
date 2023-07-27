@@ -1,47 +1,399 @@
 *{
-     width: 100%;
-     height: 100%;
      margin: 0;
      padding: 0;
-}
-
-header {
-     width: 100%;
-     height: 100px;
-     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-     -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-     -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-#imageContainer {
-     width: auto;
-     height: 80%;
-     margin-left: 4rem;
-}
-
-img{
-     width: 100%;
-     height: 100%;
-}
-
-nav{
-     width: auto;
-     height: auto;
-     margin-right: 4rem;
-     display: flex;
-     align-items: center;
-}
-
-nav a{
-     margin: 0 10px;
-     text-decoration: none;
-     color: black;
-     font-size: 20px;
      font-family: sans-serif;
 }
 
+ul{
+     list-style: none;
+}
+
+a{
+     text-decoration: none;
+     color: gray;
+}
 
 
+@media screen and (min-width: 320px){
+
+     header {
+          width: 100%;
+          height: 100px;
+          box-shadow: 0px -7px 20px 0px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 0px -7px 20px 0px rgba(0,0,0,0.5);
+          -moz-box-shadow: 0px -7px 20px 0px rgba(0,0,0,0.5);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     
+     #headerImageContainer {
+          width: auto;
+          height: 50%;
+          margin-left: 2rem;
+     }
+     
+     img{
+          width: 100%;
+          height: 100%;
+     }
+     
+     nav{
+          width: auto;
+          height: auto;
+          margin-right: 2rem;
+          display: flex;
+          align-items: center;
+     }
+     
+     nav a{
+          margin: 0 5px;
+          text-decoration: none;
+          color: black;
+          font-size: 12px;
+          font-family: sans-serif;
+     }
+     main{
+          padding: 1rem;
+          max-width: 1450px;
+          margin: auto;
+     }
+     
+     #portada{
+          width: 100%;
+          height: 20rem;
+          display: flex;
+          flex-direction: column;
+          
+     }
+     
+     #column1{
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+     }
+
+     #column2{
+          height: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+     }
+
+     h1{
+          font-size: 23px;
+     }
+
+     h2{
+          font-size: 18px;
+     }
+
+     
+     p{
+          text-align: center;
+          line-height: 1.3rem;
+          font-size: x-small;
+          color: gray;
+     }
+
+     #buttonContainer{
+          width: 200px;
+          display: flex;
+          justify-content: space-around;
+     }
+
+     button{
+          width: 5rem;
+          height: 1.4rem;
+          border-radius: 20px;
+          border: 1px solid black;
+          font-size: x-small;
+     }
+     button:active{
+          background-color: black;
+          color:white;
+     }
+     
+     button:first-child{
+          background-color: black;
+          color:white;
+     }
+
+     button:first-child:active{
+          background-color: white;
+          color:black;
+     }
+
+     #portadaImageContainer{
+          height: 100%;
+     }
+
+     #AboutUs{
+          margin:1rem 10px;
+     }
+
+     #cards{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 7%;
+          border-top: 1px solid #cbcbcb;
+          border-bottom: 1px solid #cbcbcb;
+     }
+
+     #cards p{
+          margin-top: 1rem;
+     }
+
+     #cards h2{
+          margin-top: 15px;
+     }
+
+     #cardsContainer{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .card{
+          display: flex;
+          align-items: center;
+          justify-content:flex-start;
+          flex-direction: column;
+          width: 190px;
+          height:100%;
+          margin: 1rem;
+     }
+
+
+     .card h3{
+          margin: 22px 0 10px;
+     }
+     #cards .card p{
+          margin-top: 0;
+     }
+
+     .cardImageWrapper{
+          width: 40px;
+     }
+
+     footer{
+          display: flex;
+          max-width: 1450px;
+          margin: auto;
+          flex-direction: column;
+          align-items: center;
+     }
+     
+     li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin:1rem 0;
+     }
+
+     #footerColumn1{
+          display: flex;
+          flex-direction: column;
+          
+          width: 15rem;
+     }
+
+     #footerColumn1 h2{
+          margin: auto;
+     }
+
+     .contact{
+          margin-top: 1rem;
+          width: 160px;
+     }
+
+     .contact li p{
+          font-size: small;
+          margin: auto;
+     }
+
+
+     #contactContainer{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+
+     .contactImageContainer{
+          width: 15px;
+          height: 15px;
+          background-color: #dbdbdb;
+          padding: 5px;
+          border-radius: 100%;
+     }
+
+     #socialMedia ul{
+          display: flex;
+     }
+     #socialMedia li{
+          margin-left: 10px;
+     }
+     .socialImageContainer{
+          width: 15px;
+          height: 15px;
+     }
+
+     #footerImageContainer{
+          width: 80%;
+          margin: auto;
+     }
+
+}
+
+
+@media screen and (min-width: 720px){
+     
+     
+     #headerImageContainer {
+          height: 80%;
+          margin-left: 4rem;
+     }
+     
+     
+     nav{
+          margin-right: 4rem;
+     }
+     
+     nav a{
+          margin: 0 10px;
+          font-size: 20px;
+     }
+
+     h1{
+          font-size: 27px;
+     }
+
+     h2{
+          font-size: 22px;
+     }
+     
+     p{
+          line-height: 1.5rem;
+          font-size: medium ;
+     }
+
+     #buttonContainer{
+          width:300px;
+     }
+     
+     button{
+          width: 7rem;
+          height: 1.7rem;
+          border-radius: 20px;
+          border: 1px solid black;
+          font-size:medium;
+     }
+     #AboutUs{
+          margin:1rem 25px;
+     }
+
+     #cardsContainer{
+          width: 90%;
+          margin-top: 1.5rem;
+          justify-content: space-evenly;
+          align-items: flex-start;
+     }
+
+     #footerColumn1{
+          width: 23rem;
+     }
+     #contactContainer{
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 2rem;
+     }
+}
+
+@media screen and (min-width: 1080px){
+     
+     header{
+          height: 120px;
+     }
+     
+     #portada{
+          flex-direction: row;
+          height: 20rem;
+          justify-content: space-around;
+     }
+
+     #column1{
+          width: 30%;
+          height: 100%;
+     }
+
+     h1{
+          font-size: 2em;
+     }
+
+     h2{
+          font-size: 1.5em;
+     }
+
+     
+     p{
+          line-height: 1.9rem;
+          font-size: large ;
+     }
+
+     #column2{
+          width: auto;
+          height: 100%;
+          align-items: flex-start;
+     }
+
+     #portadaImageContainer{
+          height: 100%;
+     }
+
+     #buttonContainer{
+          width:400px;
+     }
+
+     button{
+          height: 2rem;
+          width: 9rem;
+     }
+
+     #AboutUs{
+          margin:1rem 10rem;
+     }
+     #cardsContainer{
+          margin-top: 2rem;
+     }
+     #cards h2{
+          margin-top: 40px;
+     }
+     .card{
+          width: 200px;
+     }
+
+     footer{
+          flex-direction: row;
+          justify-content: space-around;
+          height: 30rem;
+     }
+     #footerColumn1{
+          width: 70%;
+          margin-left: 2rem;
+
+     }
+     #footerColumn1 h2{
+          margin: 0;
+     }
+
+     
+     #contactContainer{
+          width: 27rem;
+     }
+}
